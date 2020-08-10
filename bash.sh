@@ -16,10 +16,10 @@ if [ $1 ] ; then
   fi
 
 git push
-echo '将代码推入到远程分支息->' + $?
+pushRes = $?
+echo '将代码推入到远程分支息->' + pushRes
 
-if [ "$?" = "1" ] ; then
-  echo 'ccc'
+if [ $pushRes = '1' ] ; then
   git pull
   echo '代码有冲突， 请在本地修改，修改完继续执行此条命令 bash bash.sh'
 fi

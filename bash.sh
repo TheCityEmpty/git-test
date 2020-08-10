@@ -18,9 +18,9 @@ if [ $1 ] ; then
 git push
 echo '将代码推入到远程分支息->' + $?
 
-if [ $? = 1 ] ; then
+if [ $? = '1' ] ; then
   git pull
-  if [ $? = 1 ] ; then
+  if [ $? = '1' ] ; then
     git push
   fi
 fi

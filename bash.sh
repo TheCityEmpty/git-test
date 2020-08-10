@@ -17,7 +17,7 @@ if [ $1 ] ; then
 
 git push
 pushRes = $?
-echo '将代码推入到远程分支息->' + $pushRes
+# echo '将代码推入到远程分支息->' + $pushRes
 
 if [ $pushRes = '1' ] ; then
   git pull

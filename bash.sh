@@ -18,7 +18,7 @@ if [ $1 ] ; then
 git push
 echo '将代码推入到远程分支息->' + $?
 
-if [ $? = '1' ] ; then
+if [ '$?' = '1' ] ; then
   git pull
   echo '代码有冲突， 请在本地修改，修改完继续执行此条命令 bash bash.sh'
 fi

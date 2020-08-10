@@ -16,7 +16,7 @@ if [ $1 ] ; then
   fi
 
 git push
-pushRes = $?
+pushRes = 1
 # echo '将代码推入到远程分支息->' + $pushRes
 echo $pushRes
 # if [ $pushRes = '1' ] ; then
